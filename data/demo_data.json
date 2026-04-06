@@ -1,0 +1,244 @@
+{
+  "contracts": [
+    {
+      "id": "CTR-2026-001",
+      "title": "Software Development Services Agreement",
+      "type": "service",
+      "party": "DataVendor Corp",
+      "value": 48000,
+      "currency": "EUR",
+      "expiry": "2027-01-15",
+      "auto_renewal": true,
+      "renewal_window_days": 60,
+      "jurisdiction": "Spain",
+      "status": "active"
+    },
+    {
+      "id": "CTR-2026-002",
+      "title": "Non-Disclosure Agreement \u2014 Project Atlas",
+      "type": "nda",
+      "party": "Inversiones Grupo Norte S.L.",
+      "value": 0,
+      "currency": "EUR",
+      "expiry": "2026-12-31",
+      "auto_renewal": false,
+      "renewal_window_days": 0,
+      "jurisdiction": "Spain",
+      "status": "active"
+    },
+    {
+      "id": "CTR-2025-018",
+      "title": "Cloud Infrastructure Managed Services",
+      "type": "service",
+      "party": "TechOps Europe GmbH",
+      "value": 96000,
+      "currency": "EUR",
+      "expiry": "2026-05-30",
+      "auto_renewal": true,
+      "renewal_window_days": 90,
+      "jurisdiction": "Germany",
+      "status": "expiring_soon"
+    },
+    {
+      "id": "CTR-2025-031",
+      "title": "Legal Consultancy Retainer Agreement",
+      "type": "retainer",
+      "party": "Bufete Mart\u00ednez & Asociados",
+      "value": 36000,
+      "currency": "EUR",
+      "expiry": "2026-06-15",
+      "auto_renewal": true,
+      "renewal_window_days": 30,
+      "jurisdiction": "Spain",
+      "status": "expiring_soon"
+    },
+    {
+      "id": "CTR-2024-077",
+      "title": "Data Processing Agreement (GDPR Art. 28)",
+      "type": "dpa",
+      "party": "Analytics Solutions Ltd",
+      "value": 0,
+      "currency": "EUR",
+      "expiry": "2026-09-01",
+      "auto_renewal": false,
+      "renewal_window_days": 0,
+      "jurisdiction": "UK",
+      "status": "active"
+    },
+    {
+      "id": "CTR-2026-008",
+      "title": "Exclusive Distribution Agreement \u2014 Iberia",
+      "type": "distribution",
+      "party": "IberTech Distribuciones S.A.",
+      "value": 240000,
+      "currency": "EUR",
+      "expiry": "2028-03-01",
+      "auto_renewal": true,
+      "renewal_window_days": 120,
+      "jurisdiction": "Spain",
+      "status": "active"
+    },
+    {
+      "id": "CTR-2025-055",
+      "title": "Employment Contract \u2014 Senior Engineer",
+      "type": "employment",
+      "party": "Internal \u2014 J. Garc\u00eda L\u00f3pez",
+      "value": 72000,
+      "currency": "EUR",
+      "expiry": "2026-07-01",
+      "auto_renewal": false,
+      "renewal_window_days": 0,
+      "jurisdiction": "Spain",
+      "status": "expiring_soon"
+    },
+    {
+      "id": "CTR-2023-099",
+      "title": "Office Lease Agreement \u2014 Madrid HQ",
+      "type": "lease",
+      "party": "Inmuebles Centro S.L.",
+      "value": 84000,
+      "currency": "EUR",
+      "expiry": "2026-04-30",
+      "auto_renewal": true,
+      "renewal_window_days": 60,
+      "jurisdiction": "Spain",
+      "status": "critical"
+    },
+    {
+      "id": "CTR-2026-014",
+      "title": "API Integration License \u2014 FinanceHub",
+      "type": "license",
+      "party": "FinanceHub Europe B.V.",
+      "value": 18000,
+      "currency": "EUR",
+      "expiry": "2027-02-28",
+      "auto_renewal": true,
+      "renewal_window_days": 30,
+      "jurisdiction": "Netherlands",
+      "status": "active"
+    },
+    {
+      "id": "CTR-2025-041",
+      "title": "Marketing Services Framework Agreement",
+      "type": "service",
+      "party": "Digital Growth Agency SL",
+      "value": 24000,
+      "currency": "EUR",
+      "expiry": "2026-05-01",
+      "auto_renewal": false,
+      "renewal_window_days": 0,
+      "jurisdiction": "Spain",
+      "status": "expiring_soon"
+    }
+  ],
+  "risks": [
+    {
+      "contract_id": "CTR-2023-099",
+      "risk_type": "CRITICAL_EXPIRY",
+      "severity": 95,
+      "detected_at": "2026-04-01T06:00:00Z",
+      "detail": "Office lease expires in 29 days. Auto-renewal window (60 days) already MISSED. Requires immediate landlord negotiation.",
+      "action": "Contact Inmuebles Centro S.L. today. Negotiate extension or identify alternative premises."
+    },
+    {
+      "contract_id": "CTR-2025-018",
+      "risk_type": "RENEWAL_WINDOW_OPEN",
+      "severity": 82,
+      "detected_at": "2026-04-01T06:00:00Z",
+      "detail": "Cloud infrastructure contract: 90-day auto-renewal window opened March 1. Cancellation deadline: May 30. Decision required this week.",
+      "action": "Review service performance. Confirm renewal or issue cancellation notice before May 30."
+    },
+    {
+      "contract_id": "CTR-2026-001",
+      "risk_type": "PENALTY_CLAUSE",
+      "severity": 74,
+      "detected_at": "2026-04-01T06:00:00Z",
+      "detail": "Section 4.2: late payment penalty of 1.5%/month on outstanding balances. Current invoice #INV-2026-034 is 12 days overdue.",
+      "action": "Escalate to Finance. Penalty exposure: \u20ac720 if unpaid within 18 days."
+    },
+    {
+      "contract_id": "CTR-2026-008",
+      "risk_type": "EXCLUSIVITY_CLAUSE",
+      "severity": 71,
+      "detected_at": "2026-04-01T06:00:00Z",
+      "detail": "Exclusive distribution rights granted for Iberian market for 24 months. Limits ability to onboard competing distributor.",
+      "action": "Review strategic plan. Ensure exclusivity aligns with market expansion goals for 2027."
+    },
+    {
+      "contract_id": "CTR-2024-077",
+      "risk_type": "GDPR_REVIEW_DUE",
+      "severity": 68,
+      "detected_at": "2026-04-01T06:00:00Z",
+      "detail": "DPA with Analytics Solutions Ltd has not been reviewed since signing in 2024. GDPR Art. 28 requires periodic processor audits.",
+      "action": "Schedule DPA review with DPO. Request updated security certification from processor."
+    },
+    {
+      "contract_id": "CTR-2025-031",
+      "risk_type": "JURISDICTION_MISMATCH",
+      "severity": 61,
+      "detected_at": "2026-04-01T06:00:00Z",
+      "detail": "Retainer agreement governed by Spanish law but signed entity is registered in Gibraltar. Potential enforcement complexity.",
+      "action": "Flag to senior counsel for review before renewal."
+    }
+  ],
+  "search_demo": [
+    {
+      "query": "contracts with auto-renewal clauses",
+      "hits": [
+        "CTR-2026-001",
+        "CTR-2025-018",
+        "CTR-2026-008",
+        "CTR-2025-031",
+        "CTR-2023-099"
+      ],
+      "time_ms": 43
+    },
+    {
+      "query": "penalty clauses and late payment fees",
+      "hits": [
+        "CTR-2026-001",
+        "CTR-2025-018"
+      ],
+      "time_ms": 38
+    },
+    {
+      "query": "GDPR data processing obligations",
+      "hits": [
+        "CTR-2024-077",
+        "CTR-2026-001"
+      ],
+      "time_ms": 51
+    },
+    {
+      "query": "exclusivity and non-compete restrictions",
+      "hits": [
+        "CTR-2026-008",
+        "CTR-2026-002"
+      ],
+      "time_ms": 39
+    },
+    {
+      "query": "contracts expiring before July 2026",
+      "hits": [
+        "CTR-2023-099",
+        "CTR-2025-018",
+        "CTR-2025-031",
+        "CTR-2025-055",
+        "CTR-2025-041"
+      ],
+      "time_ms": 47
+    }
+  ],
+  "chunks_demo": {
+    "CTR-2026-001": 14,
+    "CTR-2026-002": 8,
+    "CTR-2025-018": 19,
+    "CTR-2025-031": 12,
+    "CTR-2024-077": 11,
+    "CTR-2026-008": 23,
+    "CTR-2025-055": 9,
+    "CTR-2023-099": 17,
+    "CTR-2026-014": 13,
+    "CTR-2025-041": 10
+  }
+}

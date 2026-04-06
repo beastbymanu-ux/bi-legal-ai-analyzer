@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  legal-ai-demo:
+    build: ./dashboard
+    container_name: legal-ai
+    ports:
+      - "8505:8505"
+    restart: always
