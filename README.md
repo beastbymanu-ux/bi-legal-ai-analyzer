@@ -1,8 +1,8 @@
 # Enterprise Legal AI: Private Contract Analysis & Compliance Hub
 
-> **On-premise contract intelligence** — LangChain · ChromaDB · Ollama/Llama3 · Streamlit · Docker
+> Own project by Manu (OpenClaw Labs), built and tested with demo data. Not a client deployment.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-openclawlabs--legal.duckdns.org-00d4aa?style=for-the-badge)](https://openclawlabs-legal.duckdns.org)
+> **On-premise contract intelligence** — LangChain · ChromaDB · Ollama/Llama3 · Streamlit · Docker
 
 ## Problem
 
@@ -10,21 +10,12 @@ Legal teams spending **40+ hrs/week** reviewing contracts manually. Junior staff
 
 ## Solution
 
-On-premise contract intelligence system deployed on a private VPS:
+On-premise contract intelligence system designed to run on a private VPS:
 
-- **LangChain + PyMuPDF** chunks and embeds 500+ contracts into a private ChromaDB vector store
+- **LangChain + PyMuPDF** chunks and embeds contracts into a private ChromaDB vector store
 - **Ollama/Llama 3** answers natural language queries — zero data leaves the server
 - **Nightly risk scanner** flags expiring contracts and high-severity clauses automatically
 - **Streamlit dashboard** gives instant visibility to the entire legal corpus
-
-## Results (STAR)
-
-| Metric | Before | After |
-|--------|--------|-------|
-| Contract review time | 3 hours | 8 minutes |
-| Paralegal hours recovered | — | €14,400/mo |
-| GDPR risk | High (ChatGPT) | Eliminated |
-| Payback period | — | 12 days |
 
 ## Architecture
 
@@ -44,13 +35,12 @@ PDF/DOCX Corpus → PyMuPDF + OCR → LangChain Chunking
 | PDF Parsing | PyMuPDF + Tesseract OCR |
 | API Layer | FastAPI |
 | Dashboard | Streamlit |
-| Infrastructure | Docker · Nginx · Vultr VPS |
+| Infrastructure | Docker · Nginx · private VPS |
 
-## 3 Golden Pillars
+## Design principles
 
-1. **Money** — €14,400/mo in recovered paralegal hours. ROI in 12 days.
-2. **Ownership** — Runs entirely on client's server. Zero cloud. GDPR-compliant by design.
-3. **Scalability** — Dockerized. Add new document types or LLM models without vendor lock-in.
+1. **Ownership** — Runs entirely on your own server. Zero cloud. GDPR-compliant by design.
+2. **Scalability** — Dockerized. Add new document types or LLM models without vendor lock-in.
 
 ## Quick Start
 
@@ -60,10 +50,3 @@ cd bi-legal-ai-analyzer
 docker-compose up -d
 # Visit http://localhost:8505
 ```
-
-## Live Demo
-
-**[https://openclawlabs-legal.duckdns.org](https://openclawlabs-legal.duckdns.org)**
-
----
-*Built by [OpenClaw Labs](https://openclawlabs-ai.duckdns.org) — Senior AI/Data Engineering*
